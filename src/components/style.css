@@ -1,0 +1,463 @@
+button:hover {
+    cursor: pointer;
+    color: #191919;
+    background: white;
+}
+/* =========== LOGIN STYLE ============ */
+
+.login {
+    color: white;
+    margin: 10% 0px 5% 0%;
+    padding-bottom: 20px
+}
+
+.login .container {
+    text-align: center;
+    box-sizing: border-box;
+    width: 70%;
+    margin: 20% auto;
+    background: #191919;
+    border-radius: 20px;
+    padding: 5px 30px;
+}
+
+.login h1 {
+    margin: 20px;
+}
+
+.login input {
+    width: 80%;
+    display: block;
+    line-height: 2.3rem;
+    border: 3px solid #88cff8;
+    border-radius: 30px;
+    margin: 20px auto;
+    margin-top: 5px;
+    color: white;
+    background: #191919;
+    text-align: center;
+    font-size: large;
+}
+
+.login .buttons button {
+    /* width: 100px; */
+    line-height: 2.3rem;
+    border: 3px solid #5dffb5;
+    border-radius: 30px;
+    background: #191919;
+    color: white;
+    margin-top: 10px;
+    padding: 0px 25px;
+}
+.login .buttons span {
+    margin: 0px 40px;
+}
+
+/* =========== SIGN UP STYLE ============ */
+
+.signup {
+    color: white;
+    margin: 5% 0px;
+    padding-bottom: 20px
+}
+.signup .container {
+    text-align: center;
+    box-sizing: border-box;
+    width: 70%;
+    margin: 12% auto;
+    background: #191919;
+    border-radius: 20px;
+    padding: 5px 30px;
+}
+
+
+.signup h1 {
+    margin: 20px;
+}
+
+.signup form {
+    margin-top: 25px;
+}
+
+.signup input {
+    box-sizing: border-box;
+    width: 80%;
+    display: block;
+    line-height: 2.3rem;
+    border: 3px solid #88cff8;
+    border-radius: 30px;
+    margin: 20px auto;
+    padding-left: 20px;
+    /* margin-top: 5px; */
+    color: white;
+    background: #1a1f23;
+    text-align: center;
+    font-size: large;
+    text-align: left;
+}
+.signup .confirm {
+    display: flex;
+    justify-content: space-around;
+}
+
+.signup .confirm button {
+    width: 100px;
+    line-height: 2.3rem;
+    border: 3px solid #5dffb5;
+    border-radius: 30px;
+    background: #1a1f23;
+    color: white;
+    margin-top: 10px;
+}
+.signup .confirm  button.cancel {
+    border: red solid 3px;
+
+}
+.signup label {
+    float: left;
+    margin: 0px 0px 5px 60px;
+}
+
+
+/* =========== TODO LIST STYLE ============ */
+.todolist {
+    color: white;
+    /* margin: 5% 0px; */
+    padding-bottom: 20px;
+}
+.todolist .container {
+    text-align: center;
+    width: 70%;
+    margin: 100px auto;
+    border-radius: 20px;
+    padding: 5px 30px;
+}
+.todolist .container .head {
+    width: 100%;
+    background: #191919;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 40px;
+    border-radius: 20px;
+    align-items: center;
+}
+.todolist .container .head button {
+    border: red 3px solid;
+}
+.todolist .container form  {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px 0px;
+    background: #191919;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 40px;
+    border-radius: 20px;
+    align-items: center;
+}
+.todolist .container button {
+    width: 100px;
+    line-height: 2.3rem;
+    border: 3px solid #5dffb5;
+    border-radius: 30px;
+    background: #1a1f23;
+    color: white;
+    font-size: large;
+}
+.todolist .container form input {
+    width: 60%;
+    display: block;
+    line-height: 2.3rem;
+    border: 3px solid #88cff8;
+    border-radius: 30px;
+    color: white;
+    background: #191919;
+    text-align: left;
+    font-size: large;
+    padding-left: 10px;
+}
+.todolist .container ul {
+    width: 100%;
+    background: #191919;
+    padding: 20px 40px;
+    border-radius: 20px;
+}
+.todolist .container .list p {
+    color: white;
+    font-size: 20px;
+}
+.todolist .container .list .item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    margin: 10px auto;
+    padding: 5px 10px;
+    border-radius: 40px;
+    background: white;
+    color: black;
+    border: 3px solid #88cff8;
+    font-size: 20px;
+}
+.todolist .container .list .item div {
+    margin-left: 5px;
+}
+.todolist .container .list .item button {
+    line-height: .5rem;
+    width: 20px;
+    height: 20px;
+    border: none;
+    background: red;
+    color: white;
+    font-size: small;
+    margin-top: 0px;
+}
+
+.todolist .container .clearbutton {
+    border: red 3px solid;
+    margin: 20px;
+}
+
+
+
+ /* Small devices (landscape phones) */
+
+
+ 
+ @media (max-width:576px) {
+     
+     /* ========  LOGIN ============== */
+    .login .container {
+        width: 100%;
+        margin-top: 25%;
+    }
+    .login .container input  {
+        width: 100%;
+    }
+    .login .container button {
+        display: block;
+        width: 100%;
+        margin: 10px auto 5px auto; 
+    }
+    .login .container .buttons {
+        margin: 25px auto;
+    }
+    /* ================== SIGNUP ========= */
+
+    .signup {
+        margin: 5% 0px;
+        padding-bottom: 20px
+    }
+    .signup .container {
+        width: 100%;
+        margin: 15% auto;
+    }
+    .signup .confirm {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    }
+
+    .signup .confirm button {
+        display: block;
+        width: 40%;
+        margin:10px auto;
+    }
+    
+
+    /* ================== TODO LIST ========= */
+     
+    .todolist {
+        width: 90%;
+        padding: 0px;
+        margin: 0px;
+    }
+    .todolist .container {
+        width: 90%;
+        padding: 0px;
+        margin: 30px auto 0px auto;
+    }
+    .todolist .container .head {
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+        border-radius: 30px;
+    }
+    .todolist .container  button {
+        margin-top: 30px;
+        width: 50%;
+    }
+    .todolist .container form  {
+        width: 90%;
+        border-radius: 30px;
+        display: flex;
+        flex-direction: column;
+    }
+     .todolist .container form input {
+        width: 100%;
+        padding: 0px 10px;
+        margin-top: 10px;
+        font-size: large;
+    }
+    .todolist .container ul {
+        width: 90%;
+        margin-bottom: 30px;
+    }
+    .todolist .container .clearbutton {
+        margin-left: 30%;
+        display: block;
+    }
+}
+
+/* Medium devices (tablets) */
+@media (max-width:768px) and (min-width:577px) {
+     /* ========  LOGIN ============== */
+    .login .container {
+        width: 90%;
+        margin-top: 20%;
+    }
+    .login .container input  {
+        width: 100%;
+    }
+    .login .container button {
+        display: inline-block;
+        margin: 10px auto 5px auto; 
+    }
+    .login .container .buttons {
+        margin: 25px auto;
+    }
+     /* ================== SIGNUP ========= */
+
+    .signup {
+        margin: 5% 0px;
+        padding-bottom: 20px
+    }
+    .signup .container {
+        width: 90%;
+        margin: 15% auto;
+    }
+    
+
+    /* =========== TODO LIST ========= */
+    .todolist {
+        width: 90%;
+        padding: 0px;
+        margin: 0px;
+    }
+    .todolist .container {
+        width: 90%;
+        padding: 0px;
+        margin: 30px auto 0px auto;
+    }
+    .todolist .container .head {
+        width: 90%;
+        border-radius: 30px;
+    }
+    
+    .todolist .container  button {
+        margin-top: 30px;
+        width: 50%;
+    }
+    .todolist .container form  {
+        width: 90%;
+        border-radius: 30px;
+        display: flex;
+        flex-direction: column;
+    }
+     .todolist .container form input {
+        width: 100%;
+        padding: 0px 10px;
+        margin-top: 10px;
+        font-size: large;
+    }
+    .todolist .container ul {
+        width: 90%;
+        margin-bottom: 30px;
+    }
+    .todolist .container .clearbutton {
+        margin-left: 30%;
+        display: block;
+    }
+    
+}
+
+/* Large devices (desktops) */
+@media (min-width:769px) and (max-width:992px) {
+     /* ========  LOGIN ============== */
+    .login .container {
+        width: 70%;
+        margin-top: 17%;
+    }
+    .login .container input  {
+        width: 70%;
+    }
+    .login .container button {
+        display: inline-block;
+        margin: 10px auto 5px auto; 
+    }
+    .login .container .buttons {
+        margin: 25px auto;
+    }
+     /* ================== SIGNUP ========= */
+
+    .signup {
+        margin: 5% 0px;
+        padding-bottom: 20px
+    }
+    .signup .container {
+        width: 80%;
+        margin: 12% auto;
+    }
+    
+
+    /* =========== TODO LIST ========= */
+    
+}
+
+/* Extra large devices (large desktops) */
+@media  (min-width:992px) {
+     /* ========  LOGIN ============== */
+    .login .container {
+        width: 60%;
+        margin-top: 10%;
+    }
+    .login .container input  {
+        width: 70%;
+    }
+    .login .container button {
+        display: inline-block;
+        margin: 10px auto 5px auto; 
+    }
+    .login .container .buttons {
+        margin: 25px auto;
+    }
+     /* ================== SIGNUP ========= */
+
+    .signup {
+        margin: 5% 0px;
+        padding-bottom: 20px
+    }
+    .signup .container {
+        width: 60%;
+        margin: 10% auto;
+    }
+    .signup .container form input {
+        display: block;
+        margin: 15px auto;
+    }
+    .signup .container form label {
+        /* display: block; */
+        padding-left: 15px;
+    }
+   
+    .signup .confirm button {
+        display: block;
+        width: 150px;
+        margin:10px auto;
+    }
+    /* =========== TODO LIST ========= */
+    
+}
