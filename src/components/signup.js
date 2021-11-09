@@ -2,13 +2,14 @@ import './style.css'
 import { useRecoilState } from 'recoil'
 import { useState } from 'react'
 import { wrapState, userState, usersState } from '../recoil'
+import { NavLink } from 'react-router-dom'
 
 const Signup = () => {
     const [newUser, setnewUser] = useState({ id: Math.random(), name: '', username: '', password: '', list: [] });
     const [wrap, setWrap] = useRecoilState(wrapState);
     const [user, setUser] = useRecoilState(userState);
     const [users, setUsers] = useRecoilState(usersState);
-
+    let routingWrap = { ...wrap };
 
 
     const addNewUser = (newUser) => {
@@ -27,6 +28,7 @@ const Signup = () => {
             data = [...data, loginUser];
             setUsers([...data]);
             localStorage.setItem("users", JSON.stringify(data));
+            routingWrap = { list: true, login: false, signup: false };
             setWrap({ list: true, login: false, signup: false });
             localStorage.setItem("wrap", JSON.stringify(wrap));
             localStorage.setItem("loginUser", JSON.stringify(loginUser));
@@ -50,6 +52,7 @@ const Signup = () => {
         }
     }
     const cancel = () => {
+        routingWrap = { list: false, login: true, signup: false };
         setWrap({ list: false, login: true, signup: false });
         localStorage.setItem("wrap", JSON.stringify(wrap));
     }
@@ -65,8 +68,14 @@ const Signup = () => {
                     <label>Enter your password</label>
                     <input onChange={savePassword} placeholder="password" type="password" name="password" />
                     <div className="confirm" >
-                        <button onClick={saveNewUser} type="button" name="login" value="Login" >Save</button>
-                        <button onClick={cancel} className="cancel" type="button" name="cancel"  >Cancel</button>
+
+                        <NavLink to={(routingWrap.list) ? ("/Todo_List/todolist") : ("#")}>
+                            <button onClick={saveNewUser} type="button" name="login" value="Login" >Save</button>
+                        </NavLink>
+
+                        <NavLink to="/Todo_List/">
+                            <button onClick={cancel} className="cancel" type="button" name="cancel" >   Cancel</button>
+                        </NavLink>
                     </div>
                 </form>
             </div>

@@ -3,6 +3,10 @@ button:hover {
     color: #191919;
     background: white;
 }
+a {
+    text-decoration: none;
+    color: white;
+}
 /* =========== LOGIN STYLE ============ */
 
 .login {

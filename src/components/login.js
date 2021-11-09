@@ -2,6 +2,7 @@ import './style.css'
 import { useState } from 'react'
 import { userState, errorState, wrapState, usersState } from './../recoil'
 import { useRecoilState } from 'recoil'
+import { NavLink } from 'react-router-dom'
 
 
 
@@ -23,8 +24,8 @@ const Login = () => {
         setInput({ ...input, password: e.target.value })
     }
 
+    let routingWrap = { ...wrap };
     const handleSubmit = () => {
-        let routingWrap = { ...wrap };
         let loginUser = { ...user };
         let usersArray = JSON.parse(localStorage.getItem("users") || '[]');;
         usersArray.forEach(one => {
@@ -35,10 +36,10 @@ const Login = () => {
                 setWrap(routingWrap);
             }
         })
-        console.log(loginUser);
+        // console.log(routingWrap);
+        // console.log(wrap);
         localStorage.setItem("loginUser", JSON.stringify(loginUser));
         localStorage.setItem("wrap", JSON.stringify(routingWrap));
-
     }
 
     const handleSignup = () => {
@@ -56,16 +57,20 @@ const Login = () => {
                 <input onChange={handleUsername} placeholder="Username" type="text" name="username" />
                 <input onChange={handlePassword} placeholder="password" type="password" name="password" />
                 <div className="buttons">
-                    <button onClick={handleSubmit} type="button" name="login" value="Login" >Login</button>
+
+                    <NavLink to={(routingWrap.list) ? ("/Todo_List/todolist") : ("#")}>
+                        <button onClick={handleSubmit} type="button" name="login" value="Login" >Login</button>
+                    </NavLink>
+
                     <span>OR</span>
-                    <button onClick={handleSignup} type="button" name="signup">Create New Account</button>
+                    <NavLink to={(routingWrap.signup) ? ("/Todo_List/signup") : ("#")} >
+                        <button onClick={handleSignup} type="button" name="signup">Create New Account</button>
+                    </NavLink>
+
                 </div>
             </div>
         </div>
     )
-    // return (
-    //     <TodoList name={user.name} />
-    // )
 }
 
 export default Login
