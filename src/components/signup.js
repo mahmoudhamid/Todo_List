@@ -69,7 +69,7 @@ const Signup = () => {
                     <input onChange={savePassword} placeholder="password" type="password" name="password" />
                     <div className="confirm" >
 
-                        <NavLink to={(routingWrap.list) ? ("/Todo_List/src/components/todolist.js") : ("#")}>
+                        <NavLink to={(routingWrap.list) ? ("/Todo_List/todolist") : ("#")}>
                             <button onClick={saveNewUser} type="button" name="login" value="Login" >Save</button>
                         </NavLink>
 
