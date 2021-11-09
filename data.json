@@ -1,0 +1,64 @@
+{
+    "users": [
+        {
+            "id": 1,
+            "name": "Mahmoud",
+            "username": "mahmoud@gmail.com",
+            "password": "123",
+            "list": [
+                {
+                    "id": 1,
+                    "name": "study"
+                },
+                {
+                    "id": 2,
+                    "name": "play"
+                },
+                {
+                    "id": 3,
+                    "name": "walk"
+                }
+            ]
+        },
+        {
+            "id": 2,
+            "name": "Mohamed",
+            "username": "mohamed@gmail.com",
+            "password": "456",
+            "list": [
+                {
+                    "id": 1,
+                    "name": "read"
+                },
+                {
+                    "id": 2,
+                    "name": "write"
+                },
+                {
+                    "id": 3,
+                    "name": "think"
+                }
+            ]
+        },
+        {
+            "id": 3,
+            "name": "Ahmed",
+            "username": "ahmed@gmail.com",
+            "password": "789",
+            "list": [
+                {
+                    "id": 1,
+                    "name": "watch"
+                },
+                {
+                    "id": 2,
+                    "name": "listen"
+                },
+                {
+                    "id": 3,
+                    "name": "sleep"
+                }
+            ]
+        }
+    ]
+}
