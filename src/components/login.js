@@ -58,12 +58,12 @@ const Login = () => {
                 <input onChange={handlePassword} placeholder="password" type="password" name="password" />
                 <div className="buttons">
 
-                    <NavLink to={(routingWrap.list) ? ("/Todo_List/todolist") : ("#")}>
+                    <NavLink to={(routingWrap.list) ? ("/Todo_List/components/todolist") : ("#")}>
                         <button onClick={handleSubmit} type="button" name="login" value="Login" >Login</button>
                     </NavLink>
 
                     <span>OR</span>
-                    <NavLink to={(routingWrap.signup) ? ("/Todo_List/signup") : ("#")} >
+                    <NavLink to={(routingWrap.signup) ? ("/Todo_List/components/signup") : ("#")} >
                         <button onClick={handleSignup} type="button" name="signup">Create New Account</button>
                     </NavLink>
 
