@@ -34,8 +34,8 @@ const App = () => {
       <Routes>
         {/* <Login /> */}
         <Route exact path="/Todo_List/" element={<Login />} />
-        <Route path="/Todo_List/components/signup" element={<Signup />} />
-        <Route path="/Todo_List/components/todolist" element={<TodoList />} />
+        <Route path="/Todo_List/components/signup.js" element={<Signup />} />
+        <Route path="/Todo_List/components/todolist.js" element={<TodoList />} />
         {/* 
         {wrap.login ? (<Login />) : ''}
         {wrap.signup ? (<Signup />) : ''}
